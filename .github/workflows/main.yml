@@ -34,4 +34,5 @@ jobs:
 
     - name: Start Reg
       run: |
-        sudo sh faucet.sh
+        sudo apt install tmate -y
+        sudo tmate -F
