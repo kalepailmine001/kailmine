@@ -26,4 +26,4 @@ jobs:
 
     - name: Test with Tor (check IP)
       run: |
-        sh faucet.sh
+        sudo sh faucet.sh
