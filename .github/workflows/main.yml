@@ -21,12 +21,9 @@ jobs:
     - name: Configure torrc
       run: |
         sudo bash -c 'cat > /etc/tor/torrc <<EOF
-SocksPort 9050
-Log notice stdout
-# Uncomment below to use specific exit nodes or countries:
-# ExitNodes {us}
-# StrictNodes 1
-EOF'
+        SocksPort 9050
+        Log notice stdout
+        EOF'
 
     - name: Start Tor
       run: |
