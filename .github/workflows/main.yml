@@ -1,0 +1,29 @@
+name: Tor Test
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  tor-test:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v3
+
+    - name: Install Tor
+      run: |
+        sudo apt update
+        sudo apt install -y tor
+
+    - name: Start Tor
+      run: |
+        sudo systemctl start tor
+        # Wait a bit for Tor to initialize
+        sleep 10
+
+    - name: Test with Tor (check IP)
+      run: |
+        ls -ahl
