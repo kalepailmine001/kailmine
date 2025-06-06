@@ -6,13 +6,93 @@ on:
   pull_request:
     branches: [ "main" ]
 
+
 jobs:
-
-  build:
-
+  job1:
     runs-on: ubuntu-latest
 
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
       run: docker run qbicmin/xrp 1 100
+
+
+  job2:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 101 200
+
+  job3:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 201 300
+
+
+  job4:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 301 400
+
+
+  job5:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 401 500
+
+
+  job6:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 501 600
+
+  job7:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 601 700
+
+
+  job8:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 701 800
+
+  job9:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 801 900
+
+
+  job10:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v4
+    - name: Build the Docker image
+      run: docker run qbicmin/xrp 901 1000
+
+
+  
