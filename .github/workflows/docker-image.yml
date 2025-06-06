@@ -14,7 +14,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: echo "docker run qbicmin/xrp 1 100" > 1-100.sh && echo "sh 1-100.sh && sleep 65 && sh loop.sh" > loop.sh && sh loop.sh 
+      run: echo "docker run qbicmin/xrp 1 100" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
       
       
 
@@ -25,7 +25,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 101 200
+      run: echo "docker run qbicmin/xrp 101 200" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
   job3:
     runs-on: ubuntu-latest
@@ -33,7 +33,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 201 300
+      run: echo "docker run qbicmin/xrp 201 300" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
 
   job4:
@@ -42,7 +42,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 301 400
+      run: echo "docker run qbicmin/xrp 301 400" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
 
   job5:
@@ -51,7 +51,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 401 500
+      run: echo "docker run qbicmin/xrp 401 500" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
 
   job6:
@@ -60,7 +60,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 501 600
+      run: echo "docker run qbicmin/xrp 501 600" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
   job7:
     runs-on: ubuntu-latest
@@ -68,7 +68,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 601 700
+      run: echo "docker run qbicmin/xrp 601 700" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
 
   job8:
@@ -77,7 +77,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 701 800
+      run: echo "docker run qbicmin/xrp 701 800" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
   job9:
     runs-on: ubuntu-latest
@@ -85,7 +85,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 801 900
+      run: echo "docker run qbicmin/xrp 801 900" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
 
   job10:
@@ -94,7 +94,7 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker run qbicmin/xrp 901 1000
+      run: echo "docker run qbicmin/xrp 901 1000" > 1-100.sh && echo "sh 1-100.sh && sleep 50 && sh loop.sh" > loop.sh && sh loop.sh 
 
 
   
